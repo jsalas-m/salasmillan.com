@@ -1,26 +1,35 @@
-# Personal portfolio website
+# Salas-Millán Portfolio Website
 
-Static academic portfolio website for Dr. José Ángel Salas-Millán.
+Static website ready for GitHub and Cloudflare Pages.
 
 ## Files
 
-- `index.html` — main website content
-- `style.css` — visual design and responsive layout
-- `script.js` — small JavaScript helper
+- `index.html` — main page
+- `style.css` — design and responsive layout
+- `script.js` — mobile menu and scroll animations
+- `assets/images/` — optimized WebP images
 
-## How to use with GitHub + Cloudflare Pages
+## Deploy with Cloudflare Pages
 
-1. Create a new GitHub repository.
-2. Upload these files to the root of the repository.
-3. In Cloudflare Pages, connect the GitHub repository.
-4. Use these settings:
-   - Framework preset: None
+1. Create a GitHub repository, for example `salasmillan-website`.
+2. Upload all files from this folder to the repository root.
+3. In Cloudflare, go to **Workers & Pages** → **Create application** → **Pages**.
+4. Connect your GitHub repository.
+5. Use these settings:
+   - Framework preset: **None**
    - Build command: leave empty
    - Build output directory: `/`
-5. Deploy.
+6. Deploy.
 
-## Things to edit
+## Custom domain
 
-- Replace `your.email@example.com` with your real email.
-- Replace the `#` links for LinkedIn, Google Scholar and GitHub.
-- Add your final publication titles and project descriptions.
+After deployment, add your domain in Cloudflare Pages:
+
+`Custom domains` → `Set up a custom domain` → `salasmillan.com`
+
+Cloudflare will configure the required DNS records if the domain is managed in Cloudflare.
+
+## Editing content
+
+Edit `index.html` to change text, publications, links or sections.
+Replace optimized images in `assets/images/` if needed.

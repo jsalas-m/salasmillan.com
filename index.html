@@ -1,153 +1,214 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Personal academic portfolio of Dr. José Ángel Salas-Millán, researcher in food science, fermentation, functional foods and gut health." />
-  <title>Dr. José Ángel Salas-Millán | Food Science Researcher</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dr. José Ángel Salas-Millán | Food Science, Fermentation & Gut Health</title>
+  <meta name="description" content="Portfolio of Dr. José Ángel Salas-Millán, food scientist working on fermentation, functional foods, food bioactives, LC-MS metabolomics and gut health." />
+  <meta name="author" content="José Ángel Salas-Millán" />
+  <meta property="og:title" content="Dr. José Ángel Salas-Millán" />
+  <meta property="og:description" content="Food scientist working at the interface of fermentation, functional foods, metabolomics and gut health." />
+  <meta property="og:image" content="assets/images/hero-lab.webp" />
+  <meta property="og:type" content="website" />
+  <link rel="preload" as="image" href="assets/images/hero-lab.webp" />
   <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
   <header class="site-header">
-    <nav class="nav container">
-      <a class="logo" href="#top">Salas-Millán</a>
-      <div class="nav-links">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="Home">Salas-Millán</a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <div id="nav-links" class="nav-links">
         <a href="#about">About</a>
         <a href="#research">Research</a>
+        <a href="#gallery">Research in Action</a>
         <a href="#publications">Publications</a>
         <a href="#contact">Contact</a>
       </div>
     </nav>
   </header>
 
-  <main id="top">
-    <section class="hero container">
-      <div class="hero-content reveal">
-        <p class="eyebrow">Food Science · Fermentation · Gut Health</p>
-        <h1>Dr. José Ángel Salas-Millán</h1>
-        <p class="hero-text">
-          Researcher in food bioactives, fermentation, functional foods and intestinal health. I work at the interface between food science, metabolomics and in vitro biological models.
-        </p>
-        <div class="hero-actions">
-          <a class="button primary" href="#contact">Contact me</a>
-          <a class="button secondary" href="#publications">View publications</a>
+  <main id="main">
+    <section id="top" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Food Science · Fermentation · Metabolomics · Gut Health</p>
+          <h1>Dr. José Ángel Salas-Millán</h1>
+          <p class="hero-lead">
+            Food scientist working at the interface of functional foods, food bioactives,
+            fermentation, LC-MS metabolomics and intestinal health.
+          </p>
+          <div class="hero-actions" aria-label="Profile links">
+            <a class="button primary" href="mailto:contact@salasmillan.com">Contact</a>
+            <a class="button" href="https://scholar.google.com/citations?user=6Y7bh0cAAAAJ&hl=es&oi=ao" target="_blank" rel="noopener">Google Scholar</a>
+            <a class="button" href="https://www.linkedin.com/in/salas-ja/" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+          <dl class="quick-stats" aria-label="Research keywords">
+            <div><dt>Focus</dt><dd>Functional foods</dd></div>
+            <div><dt>Tools</dt><dd>LC-MS · Cell models</dd></div>
+            <div><dt>Approach</dt><dd>Food innovation</dd></div>
+          </dl>
+        </div>
+        <div class="hero-visual reveal">
+          <img src="assets/images/hero-lab.webp" alt="José Ángel Salas-Millán in the laboratory" width="1400" height="1050" />
+          <div class="profile-card" aria-label="Profile photo card">
+            <img src="assets/images/profile.webp" alt="Portrait of José Ángel Salas-Millán" width="900" height="900" />
+            <div>
+              <strong>Researcher</strong>
+              <span>Food bioactives & fermentation</span>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
 
-      <aside class="profile-card reveal">
-        <div class="profile-inner">
-          <div class="icon-circle">🔬</div>
-          <h2>Research profile</h2>
+    <section id="about" class="section white">
+      <div class="container two-col">
+        <div class="section-heading reveal">
+          <p class="eyebrow">About</p>
+          <h2>Transforming food matrices into evidence-based functional ingredients.</h2>
+        </div>
+        <div class="section-text reveal">
           <p>
-            From plant-based matrices to fermented foods, my research explores how processing can transform food by-products into ingredients with nutritional, technological and biological value.
+            I am a food scientist focused on the development and biological evaluation of
+            functional foods, with special interest in fermented plant-based products,
+            food by-product valorisation, gut health and analytical chemistry.
           </p>
-          <div class="tags-grid">
-            <span>LC-MS metabolomics</span>
-            <span>Functional foods</span>
-            <span>Cell models</span>
-            <span>Fermentation</span>
-          </div>
-        </div>
-      </aside>
-    </section>
-
-    <section id="about" class="section section-white">
-      <div class="container split">
-        <div>
-          <h2>About</h2>
-        </div>
-        <div>
-          <p class="large-text">
-            I am a food scientist focused on the development and evaluation of functional foods, with particular interest in fermented plant-based products, food by-product valorisation, gut health and analytical chemistry. My work combines food technology, LC-MS-based metabolomics and biological assays to understand how food processing affects bioactivity.
+          <p>
+            My work integrates food technology, microbial fermentation, LC-MS-based
+            metabolomics and in vitro biological models to understand how processing
+            modifies phytochemicals, bioaccessibility and bioactivity.
           </p>
-          <div class="pill-list">
-            <span>Postdoctoral researcher</span>
-            <span>Food bioactives</span>
-            <span>Sustainability</span>
+          <div class="tag-list" aria-label="Expertise tags">
+            <span>Fermentation</span><span>LC-MS/MS</span><span>Food bioactives</span><span>Cell culture</span><span>Gut health</span><span>Sustainability</span>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="research" class="section container">
-      <div class="section-heading">
-        <h2>Research areas</h2>
-        <p>My research is organised around food innovation, analytical characterisation and biological relevance.</p>
-      </div>
-
-      <div class="cards-grid">
-        <article class="research-card">
-          <div class="card-icon">🧪</div>
-          <h3>Functional foods & fermentation</h3>
-          <p>Valorisation of fruit and vegetable by-products through fermentation to develop bioactive ingredients and beverages.</p>
-        </article>
-        <article class="research-card">
-          <div class="card-icon">🧬</div>
-          <h3>Gut health & inflammation</h3>
-          <p>In vitro and ex vivo models to study food bioactives, intestinal epithelial responses and inflammatory signalling.</p>
-        </article>
-        <article class="research-card">
-          <div class="card-icon">📊</div>
-          <h3>Food metabolomics</h3>
-          <p>LC-MS, GC-MS and omics-based approaches to characterise phytochemicals, metabolites and bioactive transformations.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="publications" class="section section-dark">
+    <section id="research" class="section">
       <div class="container">
-        <div class="section-heading light">
-          <h2>Selected publications</h2>
-          <p>A selection of research outputs related to fermented foods, food by-products and bioactive compounds.</p>
+        <div class="section-heading narrow reveal">
+          <p class="eyebrow">Research Areas</p>
+          <h2>Food innovation, mechanistic biology and analytical characterisation.</h2>
         </div>
-
-        <div class="publication-list">
-          <article class="publication-item">
-            <span>01</span>
-            <h3>Antidiabetic lactofermented beverage from broccoli leaves</h3>
+        <div class="cards three">
+          <article class="card reveal">
+            <span class="card-icon">🧫</span>
+            <h3>Microbiome, nutrition and metabolic health</h3>
+            <p>Investigating how dietary components, bioactive compounds and food processing strategies influence gut microbiota, intestinal health, inflammation and metabolic disease.</p>
           </article>
-          <article class="publication-item">
-            <span>02</span>
-            <h3>Sparkling fruity-based wine from melon by-product</h3>
+          <article class="card reveal">
+            <span class="card-icon">🌊</span>
+            <h3>PreVegDiet</h3>
+            <p>Exploring seaweed supplementation, metabolic health and intestinal inflammatory responses using human samples, epithelial models and omics-based approaches.</p>
           </article>
-          <article class="publication-item">
-            <span>03</span>
-            <h3>Fruit wine from melon by-products: aroma profile and food valorisation</h3>
-          </article>
-          <article class="publication-item">
-            <span>04</span>
-            <h3>Psidium friedrichsthalianum juice and metabolic effects in diabetic models</h3>
+          <article class="card reveal">
+            <span class="card-icon">⚗️</span>
+            <h3>Functional foods and fermentation</h3>
+            <p>Developing innovative functional foods through fermentation and valorisation of agri-food by-products, integrating microbiology, metabolomics and bioactivity assays.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="section container">
-      <div class="contact-box">
+    <section id="gallery" class="section white">
+      <div class="container">
+        <div class="section-heading narrow reveal">
+          <p class="eyebrow">Research in Action</p>
+          <h2>Experimental platforms and research environments.</h2>
+        </div>
+        <div class="gallery-grid">
+          <figure class="gallery-item large reveal">
+            <img loading="lazy" src="assets/images/qtof.webp" alt="LC-MS QTOF instrumentation" />
+            <figcaption><strong>LC-MS QTOF</strong><span>Metabolomics and phytochemical profiling</span></figcaption>
+          </figure>
+          <figure class="gallery-item reveal">
+            <img loading="lazy" src="assets/images/qqq.webp" alt="LC-MS triple quadrupole instrumentation" />
+            <figcaption><strong>LC-MS QqQ</strong><span>Targeted quantification</span></figcaption>
+          </figure>
+          <figure class="gallery-item reveal">
+            <img loading="lazy" src="assets/images/fermenter.webp" alt="Fermentation bioprocess fermenter" />
+            <figcaption><strong>Fermentation bioprocess</strong><span>Controlled bioreactor systems</span></figcaption>
+          </figure>
+          <figure class="gallery-item reveal">
+            <img loading="lazy" src="assets/images/hpp.webp" alt="High hydrostatic pressure equipment" />
+            <figcaption><strong>High hydrostatic pressure</strong><span>Non-thermal processing</span></figcaption>
+          </figure>
+          <figure class="gallery-item reveal">
+            <img loading="lazy" src="assets/images/in-vivo.webp" alt="In vivo experimental work in laboratory conditions" />
+            <figcaption><strong>Experimental models</strong><span>Biological validation</span></figcaption>
+          </figure>
+          <figure class="gallery-item reveal">
+            <img loading="lazy" src="assets/images/bottles.webp" alt="Fermented beverage samples in laboratory bottles" />
+            <figcaption><strong>Food prototypes</strong><span>Fermented beverages and extracts</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications" class="section dark">
+      <div class="container">
+        <div class="section-heading narrow reveal">
+          <p class="eyebrow">Selected Publications</p>
+          <h2>Peer-reviewed work in fermentation, bioactives and functional foods.</h2>
+        </div>
+        <div class="publication-list">
+          <article class="publication reveal">
+            <p class="journal">Journal of Agriculture and Food Research · 2026</p>
+            <h3>Berry kefirs as functional non-dairy beverages: linking microbial activity, phenolic profiles, and immunomodulatory properties</h3>
+            <a href="https://doi.org/10.1016/j.jafr.2026.102963" target="_blank" rel="noopener">DOI: 10.1016/j.jafr.2026.102963</a>
+          </article>
+          <article class="publication reveal">
+            <p class="journal">Food Bioscience · 2026</p>
+            <h3>Bioactive characterization and in vivo assessment of the antidiabetic potential of <em>Psidium friedrichsthalianum</em> juice in STZ-induced diabetic rats</h3>
+            <a href="https://doi.org/10.1016/j.fbio.2026.108537" target="_blank" rel="noopener">DOI: 10.1016/j.fbio.2026.108537</a>
+          </article>
+          <article class="publication reveal">
+            <p class="journal">Food Research International · 2025</p>
+            <h3>Lactofermented beverage from broccoli leaves induces calcium dysregulation and ER-mitochondrial dysfunction in colorectal cancer cells</h3>
+            <a href="https://doi.org/10.1016/j.foodres.2025.116819" target="_blank" rel="noopener">DOI: 10.1016/j.foodres.2025.116819</a>
+          </article>
+          <article class="publication reveal">
+            <p class="journal">Food & Function · 2024</p>
+            <h3>Bioaccessibility and biotransformation of polyphenols, sulforaphane and indoles after in vitro gastrointestinal digestion of a lactofermented broccoli beverage</h3>
+            <a href="https://doi.org/10.1039/d4fo03528c" target="_blank" rel="noopener">DOI: 10.1039/d4fo03528c</a>
+          </article>
+          <article class="publication reveal">
+            <p class="journal">Food Bioscience · 2024</p>
+            <h3>A novel antidiabetic lactofermented beverage from agro-industrial waste: process optimisation, phytochemical characterisation and shelf-life</h3>
+            <a href="https://doi.org/10.1016/j.fbio.2024.103999" target="_blank" rel="noopener">DOI: 10.1016/j.fbio.2024.103999</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container contact-card reveal">
         <div>
-          <h2>Contact</h2>
-          <p>Open to collaborations in food science, fermentation, metabolomics and functional food development.</p>
+          <p class="eyebrow">Contact</p>
+          <h2>Open to scientific collaborations, consulting and research opportunities.</h2>
+          <p>For collaborations related to food science, fermentation, metabolomics, gut health and functional food development, please get in touch.</p>
         </div>
         <div class="contact-links">
-          <a href="mailto:your.email@example.com">✉️ your.email@example.com</a>
-          <p>📍 Cork, Ireland / Spain</p>
-          <div class="social-links">
-            <a href="#">LinkedIn</a>
-            <a href="#">Google Scholar</a>
-            <a href="#">GitHub</a>
-          </div>
+          <a href="mailto:contact@salasmillan.com">contact@salasmillan.com</a>
+          <a href="https://www.linkedin.com/in/salas-ja/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://scholar.google.com/citations?user=6Y7bh0cAAAAJ&hl=es&oi=ao" target="_blank" rel="noopener">Google Scholar</a>
+          <a href="https://www.scopus.com/authid/detail.uri?authorId=57898305600" target="_blank" rel="noopener">Scopus</a>
+          <a href="https://www.webofscience.com/wos/author/record/KHD-4684-2024" target="_blank" rel="noopener">Web of Science</a>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <p>© 2026 José Ángel Salas-Millán. Built for GitHub and Cloudflare Pages.</p>
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> José Ángel Salas-Millán</span>
+      <a href="#top">Back to top ↑</a>
+    </div>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
